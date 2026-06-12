@@ -5,10 +5,10 @@ type: dataset
 authors:
   - family-names: DMS Research Team
     given-names: ""
-version: "Phase 7"
+version: "1.0.0"
 date-released: "2026-06-12"
-url: "https://github.com/your-org/dms-framework"
-repository-code: "https://github.com/your-org/dms-framework"
+url: "https://github.com/alexsysctrl/dms-framework"
+repository-code: "https://github.com/alexsysctrl/dms-framework"
 license: MIT
 keywords:
   - modular-theory
@@ -27,11 +27,15 @@ abstract: >
   spacetime geometry, gauge theory, and information-theoretic structures emerge
   through eigenvalue spectrum, modular flow, and type transitions.
 repository-artifact: "https://doi.org/10.5281/zenodo.xxxxxxx"
+related-urls:
+  - url: "https://github.com/alexsysctrl/quantum-mapping"
+    label: "Modular Clifford Category (quantum-mapping repository)"
+note: "AI-generated research conducted on consumer hardware"
 preferred-citation:
   authors:
     - family-names: DMS Research Team
       given-names: ""
   title: "Derived Modular Spectrum (DMS) Framework"
   year: "2026"
-  version: "Phase 7"
-  url: "https://github.com/your-org/dms-framework"
+version: "1.0.0"
+  url: "https://github.com/alexsysctrl/dms-framework"

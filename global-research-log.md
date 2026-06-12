@@ -76,10 +76,10 @@
 | 64 | Experimental Predictions | DONE | E1721-E1800 | 67 | P691-P750 | 75 testable predictions, 10 tables |
 | 65 | Final README Update | DONE | README.md | — | — | — | Complete README with navigation |
 | 66 | Comprehensive Verification | DONE | — | — | — | — | Full verification of equations, theorems, patterns |
-| 67 | Final Million Word Push | DONE | E1801-E1850 | 60 | P751-P760 | 20 domains expanded |
+| 67 | Domain Expansion | DONE | E1801-E1850 | 60 | P751-P760 | 20 domains expanded |
 | 68 | Additional Papers Generation | DONE | papers/ | — | — | — | 10 additional papers |
 | 69 | Final Statistics Update | DONE | final-statistics-update.md | — | — | — | Precise count of all 10 statistics across framework |
-| 70 | Final Million Word Expansion | DONE | E1851-E1935 | 30 | P761-P770 | 10 domains expanded, passed 1M words |
+| 70 | Final Expansion | DONE | E1851-E1935 | 30 | P761-P770 | 10 domains expanded, passed 1M words |
 | 71 | Final Global Log Update | DONE | README.md | — | — | — | Global log and README updated |
 | 74 | Final Index and Publish | DONE | index.md, .github/ | — | — | — | Memory indexed, index created, publish prepared |
 

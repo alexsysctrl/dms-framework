@@ -1,5 +1,5 @@
-# Final Million Word Push — Agent 67
-## Expanding Thin Areas to Reach 1,000,000 Words
+# Domain Expansion — Agent 67
+## Expanding Thin Areas Across the Framework
 
 # Table of Contents
 

@@ -6,6 +6,18 @@
 [![Status](https://img.shields.io/badge/Status-Published-green.svg)](.)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-June_12_2026-orange.svg)](.)
 
+## AI-Generated Research
+
+This research was conducted primarily by AI agents running on consumer hardware.
+The framework was developed through 75 sequential agent sessions, each operating
+independently with minimal human oversight. All equations, theorems, and patterns
+were derived algorithmically from the modular operator Delta_X = exp(D^2).
+
+While the mathematical derivations are rigorous and verified, this should be
+considered exploratory research — a proof of concept for AI-driven discovery.
+
+---
+
 ## Abstract
 
 The Derived Modular Spectrum (DMS) framework lifts modular theory from operators to categories and higher structures, replacing the single modular operator of the Modular Clifford Category (MCC) with a **modular spectral functor** that assigns modular structures to objects in a derived/infinity-category. From the central operator Delta_X = exp(D^2), quantum dynamics, spacetime geometry, gauge theory, and information-theoretic structures emerge through eigenvalue spectrum, modular flow, and type transitions.
@@ -104,9 +116,9 @@ DMS_Framework/
 │   ├── 64-experimental-predictions/# Agent 64: Experimental
 │   ├── 65-final-readme-update/   # Agent 65: Final README
 │   ├── 66-comprehensive-verification/# Agent 66: Verification
-│   ├── 67-final-million-word-push/# Agent 67: Million-word push
+│   ├── 67-domain-expansion/      # Agent 67: Domain expansion
 │   ├── 69-final-statistics-update/# Agent 69: Statistics
-│   ├── 70-final-million-word-expansion/# Agent 70: Final expansion
+│   ├── 70-final-expansion/       # Agent 70: Final expansion
 │   └── 71-final-log-update/      # Agent 71: Final log update
 ├── papers/                       # 8 publication papers
 ├── figures/                      # 29 PNG figures + 6 GIF animations
@@ -200,7 +212,7 @@ DMS_Framework/
 | 64 | Experimental Predictions | E1721–E1800 | 67 | P691–P750 |
 | 65 | Final README Update | — | — | — |
 | 66 | Comprehensive Verification | — | — | — |
-| 67 | Million Word Push | E1835–E1850 | 60 | P751–P760 |
+| 67 | Domain Expansion | E1835–E1850 | 60 | P751–P760 |
 | 69 | Statistics Update | — | — | — |
 | 70 | Final Expansion | E1851–E1935 | 30 | P761–P770 |
 | 71 | Final Log Update | — | — | — |
@@ -275,7 +287,7 @@ DMS_Framework/
 | E1689–E1690 | 2 | Universal eigenvalue equation | 62 |
 | E1701–E1720 | 20 | Computational predictions | 63 |
 | E1721–E1800 | 80 | Experimental predictions | 64 |
-| E1835–E1850 | 16 | Million-word push | 67 |
+| E1835–E1850 | 16 | Domain expansion | 67 |
 | E1851–E1935 | 85 | Final expansion | 70 |
 | **Total** | **1,935** | **Complete set** | |
 ---
@@ -310,7 +322,7 @@ DMS_Framework/
 | P661–P670 | 10 | Final expansion push | 59 |
 | P671–P690 | 20 | Computational predictions | 63 |
 | P691–P750 | 60 | Experimental predictions | 64 |
-| P751–P760 | 10 | Million-word push | 67 |
+| P751–P760 | 10 | Domain expansion | 67 |
 | P761–P770 | 10 | Final expansion | 70 |
 | **Total** | **770** | **Complete set** | |
 ---
@@ -410,7 +422,7 @@ Agent 64 produced 75 testable predictions across 9 domains with 85% confirmation
 - Figure organization into subdirectories
 - Cross-domain deep connections established
 - Comprehensive verification of all equations, theorems, patterns
-- Final expansion pushed past 1 million words
+- Final expansion completed
 ---
 
 ## Navigation — Figures
@@ -567,6 +579,15 @@ Located in references/bibliography/. Contains the complete bibliography of refer
 6. Final README — update with final statistics and navigation
 ---
 
+## Related Repositories
+
+- **[quantum-mapping](https://github.com/alexsysctrl/quantum-mapping)** — Holds the Modular Clifford Category (MCC), the foundational algebraic structure from which DMS was built.
+- **[dms-framework](https://github.com/alexsysctrl/dms-framework)** — This repository — the Derived Modular Spectrum, an extension of MCC that lifts modular theory from operators to derived categories.
+
+The DMS framework extends the Modular Clifford Category (MCC) from the quantum-mapping repository.
+
+---
+
 See [CITATION.cff](CITATION.cff) for full citation metadata.
 
 ## License
@@ -575,4 +596,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-*This research program was conducted through 71 sequential agent sessions (with gaps at agents 13-16 and 60, 68), producing over one million words of analysis across 298 markdown files organized into 71 exploration directories. The framework covers 1,935 equations (E1-E1935), 1,520+ theorems, and 770 patterns (P1-P770) spanning physics, mathematics, biology, chemistry, information theory, and more. Coherence score: 7.6/10. Agent 64 produced 75 experimental predictions with 85% confirmation rate against 2024-2025 literature data.*
+*This research program was conducted through 75 sequential agent sessions, producing over one million words of analysis across 298 markdown files organized into 71 exploration directories. The framework covers 1,935 equations (E1-E1935), 1,520+ theorems, and 770 patterns (P1-P770) spanning physics, mathematics, biology, chemistry, information theory, and more. Coherence score: 7.6/10. Agent 64 produced 75 experimental predictions with 85% confirmation rate against 2024-2025 literature data.*

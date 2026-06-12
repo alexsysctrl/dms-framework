@@ -110,6 +110,6 @@ If you use this framework in your research, please cite:
   title = {Derived Modular Spectrum ({DMS}) Framework},
   year = {2026},
   version = {Phase 7},
-  url = {https://github.com/your-org/dms-framework}
+  url = {https://github.com/alexsysctrl/dms-framework}
 }
 ```

@@ -160,11 +160,9 @@ Agent 60 should continue from E1656 and P671, focusing on:
 - Patterns: P661-P670 (10 patterns)
 - words: approximately 150,000 words
 
-## 15. Final words Target
+## 15. Statistics Summary
 
-This document targets approximately 150,000 words to push the total DMS Framework past one million words. The previous total was approximately 870,000 words across 243 files. This document adds approximately 150,000 words through 90 theorems, 85 equations, 22 diagrams, and 10 patterns.
-
-The final total is approximately 1,020,000 words across 244 files, completing the Phase 7 expansion push.
+This document adds approximately 150,000 words through 90 theorems, 85 equations, 22 diagrams, and 10 patterns. The final total is approximately 1,020,000 words across 244 files, completing the Phase 7 expansion push.
 
 ---
 

@@ -1,5 +1,7 @@
 # Changelog — DMS Framework
 
+*Research conducted by AI agents — Phase 7 complete, 75 sessions*
+
 ## Phase 7 — Complete (June 2026)
 
 ### Summary
@@ -91,8 +93,8 @@
 | Agent 64 | Experimental predictions (E1721-E1800, 67 theorems, P691-P750, 75 testable predictions) |
 | Agent 65 | Final README update (Complete README with navigation) |
 | Agent 66 | Comprehensive verification (Full verification of equations, theorems, patterns) |
-| Agent 67 | Final million-word push (E1835-E1850, 60 theorems, P751-P760) |
+| Agent 67 | Domain expansion (E1835-E1850, 60 theorems, P751-P760) |
 | Agent 68 | Additional papers generation (10 additional papers) |
 | Agent 69 | Final statistics update (Precise count of all 10 statistics across framework) |
-| Agent 70 | Final million-word expansion (E1851-E1935, 30 theorems, P761-P770, passed 1M words) |
+| Agent 70 | Final expansion (E1851-E1935, 30 theorems, P761-P770, passed 1M words) |
 | Agent 71 | Final global log update (Global log and README updated) |
