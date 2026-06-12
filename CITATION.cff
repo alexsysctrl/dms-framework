@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Derived Modular Spectrum (DMS) Framework"
+type: dataset
+authors:
+  - family-names: DMS Research Team
+    given-names: ""
+version: "Phase 7"
+date-released: "2026-06-12"
+url: "https://github.com/your-org/dms-framework"
+repository-code: "https://github.com/your-org/dms-framework"
+license: MIT
+keywords:
+  - modular-theory
+  - spectral-triples
+  - derived-categories
+  - quantum-gravity
+  - p-adic-analysis
+  - information-theory
+  - quantum-field-theory
+abstract: >
+  The Derived Modular Spectrum (DMS) framework lifts modular theory from
+  operators to categories and higher structures, replacing the single modular
+  operator of the Modular Clifford Category (MCC) with a modular spectral
+  functor that assigns modular structures to objects in a derived/infinity-
+  category. From the central operator Delta_X = exp(D^2), quantum dynamics,
+  spacetime geometry, gauge theory, and information-theoretic structures emerge
+  through eigenvalue spectrum, modular flow, and type transitions.
+repository-artifact: "https://doi.org/10.5281/zenodo.xxxxxxx"
+preferred-citation:
+  authors:
+    - family-names: DMS Research Team
+      given-names: ""
+  title: "Derived Modular Spectrum (DMS) Framework"
+  year: "2026"
+  version: "Phase 7"
+  url: "https://github.com/your-org/dms-framework"
