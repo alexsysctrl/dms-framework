@@ -69,8 +69,8 @@ coverage.xml
 *.7z
 *.rar
 
-# Animations (large GIFs)
-*.gif
+# Animations (large GIFs) — kept for publication
+# *.gif
 
 # Temporary files
 *.tmp
