@@ -1,15 +1,15 @@
 # Global Research Log — DMS Framework
 
 ## Status: PUBLISHED — Phase 7 Complete
-## Last Updated: Agent 72 complete (June 12, 2026)
+## Last Updated: Agent 76 complete (June 12, 2026)
 ## License: MIT
 
 ## Current State
 - 963,000 words across 282 markdown files (explorations/)
 - 1,003,838 total across 298 markdown files
-- Equations: E1–E1935 (1,935 total)
+- Equations: E1–E2047 (2,047 total)
 - Theorems: 1,520+ unique theorems
-- Patterns: P1–P770 (770 total)
+- Patterns: P1–P835 (835 total)
 - Visual outputs: 29 PNGs + 6 GIFs in figures/ (35 total)
 - Exploration directories: 68 in explorations/
 - Papers directory: 14 papers in papers/
@@ -83,6 +83,9 @@
 | 71 | Final Global Log Update | DONE | README.md | — | — | — | Global log and README updated |
 | 74 | Final Index and Publish | DONE | index.md, .github/ | — | — | — | Memory indexed, index created, publish prepared |
 | 72 | Neuroscience | DONE | explorations/72-neuroscience/neuroscience.md | 75 | 38 | P771-P790 | EEG bands, action potential, synaptic plasticity, brain networks, sensory, consciousness |
+| 73 | Neuroscience Visuals | DONE | explorations/73-neuroscience-visuals/ | 8 | — | P771-P790 | 8 PNG figures, 3 Manim animations, 3 TikZ diagrams |
+| 76 | Probability Theory | DONE | explorations/76-probability-theory/probability-theory.md | 119 | 49 | P791-P835 | Measure-theoretic probability, convergence, characteristic functions, LLN, CLT, large deviations, martingales, Markov chains |
+| 77 | Stochastic Processes | DONE | explorations/77-stochastic-processes/stochastic-processes.md | 145 | 31 | P836-P866 | Brownian motion, Ito calculus, SDEs, Girsanov theorem, Levy processes, continuous martingales, Kalman-Bucy filtering |
 
 ## Lessons Learned
 
