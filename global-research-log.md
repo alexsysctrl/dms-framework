@@ -1,7 +1,7 @@
 # Global Research Log — DMS Framework
 
 ## Status: PUBLISHED — Phase 7 Complete
-## Last Updated: Agent 74 complete (June 12, 2026)
+## Last Updated: Agent 72 complete (June 12, 2026)
 ## License: MIT
 
 ## Current State
@@ -82,6 +82,7 @@
 | 70 | Final Expansion | DONE | E1851-E1935 | 30 | P761-P770 | 10 domains expanded, passed 1M words |
 | 71 | Final Global Log Update | DONE | README.md | — | — | — | Global log and README updated |
 | 74 | Final Index and Publish | DONE | index.md, .github/ | — | — | — | Memory indexed, index created, publish prepared |
+| 72 | Neuroscience | DONE | explorations/72-neuroscience/neuroscience.md | 75 | 38 | P771-P790 | EEG bands, action potential, synaptic plasticity, brain networks, sensory, consciousness |
 
 ## Lessons Learned
 

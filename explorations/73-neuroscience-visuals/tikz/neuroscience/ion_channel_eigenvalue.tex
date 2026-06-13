@@ -1,0 +1,96 @@
+\documentclass[12pt, border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+
+\begin{document}
+\begin{tikzpicture}[
+    node distance=1.8cm,
+    every node/.style={font=\small},
+    channel/.style={rectangle, draw=blue!70!black, fill=blue!10, minimum width=3cm, minimum height=1.2cm, align=center, font=\footnotesize},
+    eigenvalue/.style={rectangle, draw=red!70!black, fill=red!10, minimum width=3cm, minimum height=1.2cm, align=center, font=\footnotesize},
+    formula/.style={rectangle, draw=gray!50, fill=gray!5, minimum width=5cm, minimum height=0.8cm, align=center, font=\footnotesize},
+    arrow/.style={->, >=stealth, thick, blue!70!black},
+    theorem/.style={rectangle, draw=green!70!black, fill=green!10, minimum width=6cm, minimum height=1cm, align=center, font=\footnotesize},
+]
+
+% Title
+\node[font=\bfseries\large, text centered] at (0, 5.5) {Ion Channel Conductances Mapped to Eigenvalues};
+\node[font=\footnotesize, text centered, text=gray] at (0, 4.8) {Theorem 72.6: Eigenvalue Conductance Mapping; Equations E1946--E1960};
+
+% Hodgkin-Huxley equation
+\node[formula] (hh) at (0, 3.8) {
+    $C_m \dfrac{dV_m}{dt} = -g_{\text{Na}}(V_m - E_{\text{Na}}) - g_K(V_m - E_K) - g_L(V_m - E_L) + I_{\text{applied}}$
+};
+
+% Three ion channels
+\node[channel, draw=blue!80!black, fill=blue!15] (na) at (-4, 1.5) {
+    $\text{Na}^+$ Channel\\$g_{\text{Na}} = \dfrac{\lambda_{\text{Na}}}{Z_{\text{Na}}}$
+};
+\node[channel, draw=green!80!black, fill=green!15] (k) at (0, 1.5) {
+    $\text{K}^+$ Channel\\$g_K = \dfrac{\lambda_K}{Z_K}$
+};
+\node[channel, draw=orange!80!black, fill=orange!15] (l) at (4, 1.5) {
+    Leak Channel\\$g_L = \dfrac{\lambda_L}{Z_L}$
+};
+
+% Eigenvalue mappings
+\node[eigenvalue, draw=blue!80!black, fill=blue!15] (lambda_na) at (-4, -0.5) {
+    $\lambda_{\text{Na}} \in [0.1, 0.5]$ mS/cm$^2$\\Fast activation
+};
+\node[eigenvalue, draw=green!80!black, fill=green!15] (lambda_k) at (0, -0.5) {
+    $\lambda_K \in [0.03, 0.3]$ mS/cm$^2$\\Slow activation
+};
+\node[eigenvalue, draw=orange!80!black, fill=orange!15] (lambda_l) at (4, -0.5) {
+    $\lambda_L \in [0.03, 0.1]$ mS/cm$^2$\\Constant leak
+};
+
+% Voltage-dependent conductances
+\node[formula, draw=blue!50] (gna_v) at (-4, -2.5) {
+    $g_{\text{Na}}(V) = \bar{g}_{\text{Na}} \left(\dfrac{\lambda_{\text{Na}}}{\lambda_{\text{Na}} + e^{-(V - V_{1/2})/k}}\right)^{\!n}$
+};
+\node[formula, draw=green!50] (gk_v) at (0, -2.5) {
+    $g_K(V) = \bar{g}_K \left(\dfrac{\lambda_K}{\lambda_K + e^{-(V - V_{1/2})/k}}\right)^{\!4}$
+};
+\node[formula, draw=orange!50] (gl) at (4, -2.5) {
+    $g_L = \bar{g}_L \left(1 + \dfrac{\lambda_L}{\lambda_{\max}}\right)$
+};
+
+% Nernst potentials
+\node[formula, draw=purple!50, fill=purple!5] (nernst) at (0, -4.2) {
+    $E_{\text{Na}} = \dfrac{\hbar}{e} \ln\!\left(\dfrac{\lambda_{\text{Na, out}}}{\lambda_{\text{Na, in}}}\right)$,
+    \quad
+    $E_K = \dfrac{\hbar}{e} \ln\!\left(\dfrac{\lambda_{K, \text{out}}}{\lambda_{K, \text{in}}}\right)$
+};
+
+% Threshold and amplitude
+\node[formula, draw=red!50, fill=red!5] (threshold) at (0, -5.5) {
+    $V_{\text{th}} = E_{\text{Na}}\!\left(1 - e^{-\lambda_{\text{Na}}/\lambda_{\max}}\right)$,
+    \quad
+    $A_{\text{AP}} = (E_{\text{Na}} - E_K) \dfrac{\lambda_K}{\lambda_{\text{Na}}} e^{-\lambda_L/\lambda_{\max}}$
+};
+
+% Theorem box
+\node[theorem] (theorem) at (0, -7) {
+    \textbf{Theorem 72.6:} $g_{\text{ion}} = \lambda_{\text{ion}} / Z_{\text{ion}}$ \quad
+    \textbf{Theorem 72.7:} $E_{\text{ion}} = (\hbar/e) \ln(\lambda_{\text{out}}/\lambda_{\text{in}})$
+};
+
+% Arrows
+\draw[arrow] (na) -- (lambda_na) node[midway, left, font=\scriptsize] {maps to};
+\draw[arrow] (k) -- (lambda_k) node[midway, left, font=\scriptsize] {maps to};
+\draw[arrow] (l) -- (lambda_l) node[midway, right, font=\scriptsize] {maps to};
+\draw[arrow] (lambda_na) -- (gna_v) node[midway, left, font=\scriptsize];
+\draw[arrow] (lambda_k) -- (gk_v) node[midway, left, font=\scriptsize];
+\draw[arrow] (lambda_l) -- (gl) node[midway, right, font=\scriptsize];
+\draw[arrow] (hh) -- (na) node[midway, above, font=\scriptsize];
+\draw[arrow] (hh) -- (k) node[midway, above, font=\scriptsize];
+\draw[arrow] (hh) -- (l) node[midway, above, font=\scriptsize];
+\draw[arrow] (gna_v) -- (nernst) node[midway, left, font=\scriptsize];
+\draw[arrow] (gk_v) -- (nernst) node[midway, right, font=\scriptsize];
+\draw[arrow] (nernst) -- (threshold) node[midway, right, font=\scriptsize];
+\draw[arrow] (threshold) -- (theorem) node[midway, right, font=\scriptsize];
+
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,102 @@
+\documentclass[12pt, border=10pt]{standalone}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+
+\begin{document}
+\begin{tikzpicture}[
+    node distance=2cm,
+    every node/.style={font=\small},
+    type-box/.style={rectangle, draw, minimum width=4cm, minimum height=2.5cm, align=center, font=\footnotesize},
+    arrow/.style={->, >=stealth, thick},
+    theorem/.style={rectangle, draw=green!70!black, fill=green!10, minimum width=6cm, align=center, font=\footnotesize},
+]
+
+% Title
+\node[font=\bfseries\large, text centered] at (0, 6.5) {Consciousness Transition: Type III $\to$ Type II $\to$ Type I};
+\node[font=\footnotesize, text centered, text=gray] at (0, 5.8) {Theorems 72.33--72.38: Ignition Threshold, Type Transition, Consciousness Measure};
+
+% Type III (Unconscious)
+\node[type-box, draw=red!70!black, fill=red!10] (type3) at (-5, 3) {
+    \textbf{Type III: Unconscious}\\[0.2cm]
+    $\lambda_n < \lambda_{\text{critical}}$\\
+    Isolated eigenmodes\\
+    $\gamma_{\text{coherent}} < 0.3$\\
+    [0.001, 0.1] eigenvalue range
+};
+
+% Type II (Preconscious)
+\node[type-box, draw=orange!70!black, fill=orange!10] (type2) at (0, 3) {
+    \textbf{Type II: Preconscious}\\[0.2cm]
+    $\lambda_n \sim \lambda_{\text{critical}}$\\
+    Partially coupled\\
+    $0.3 < \gamma_{\text{coherent}} < 0.7$\\
+    Transition zone
+};
+
+% Type I (Conscious)
+\node[type-box, draw=green!70!black, fill=green!10] (type1) at (5, 3) {
+    \textbf{Type I: Conscious}\\[0.2cm]
+    $\lambda_n > \lambda_{\text{critical}}$\\
+    Fully coupled eigenmodes\\
+    $\gamma_{\text{coherent}} > 0.7$\\
+    [0.5, 1.0] eigenvalue range
+};
+
+% Transition arrows
+\draw[arrow, red!70!black, thick] (type3) -- (type2) node[midway, above, font=\scriptsize] {
+    $\lambda_n / \lambda_{\text{critical}} \nearrow 1$
+};
+\draw[arrow, green!70!black, thick] (type2) -- (type1) node[midway, above, font=\scriptsize] {
+    $\lambda_n / \lambda_{\text{critical}} > 1$
+};
+
+% Lambda critical threshold line
+\draw[dashed, red!70!black, thick] (-7, 1.5) -- (7, 1.5) node[right, font=\scriptsize] {$\lambda_{\text{critical}}$};
+\node[font=\scriptsize, text=red!70!black, text centered] at (7, 1.2) {Eigenvalue Coherence Threshold};
+
+% Ignition threshold
+\node[theorem, draw=red!70!black, fill=red!5] (ignition) at (0, -0.5) {
+    \textbf{Ignition (Eq. E2001):} $\lambda_{\text{ignition}} = \lambda_{\text{critical}} \left(1 + e^{-\beta E_{\text{ignition}}}\right)$
+};
+
+% Consciousness measure
+\node[type-box, draw=purple!70!black, fill=purple!10, minimum width=5cm] (consciousness) at (0, -2.5) {
+    \textbf{Consciousness Measure}\\[0.2cm]
+    $C = \Phi \times \text{GW} \times e^{-\lambda_{\min}/\lambda_{\max}}$\\[0.2cm]
+    $\Phi = \dfrac{\text{Tr}(K_X^2)}{(\text{Tr}(K_X))^2}$ \quad Integrated Information\\
+    $\text{GW} = \displaystyle\sum_{i \in \text{global}} \dfrac{\lambda_i}{\lambda_{\max}}$ \quad Global Workspace
+};
+
+% Eigenvalue coherence
+\node[type-box, draw=blue!70!black, fill=blue!10, minimum width=5cm] (coherence) at (0, -4.5) {
+    \textbf{Eigenvalue Coherence (Eq. E2009)}\\[0.2cm]
+    $\gamma_{\text{coherent}} = \left|\dfrac{\text{Tr}(\sigma_t)}{N}\right|^2 = \left|\dfrac{1}{N}\sum_n e^{i t \omega_n}\right|^2$\\[0.2cm]
+    Consciousness requires $\gamma_{\text{coherent}} > 0.5$
+};
+
+% Global workspace capacity
+\node[theorem, draw=blue!70!black, fill=blue!5] (capacity) at (0, -6) {
+    \textbf{Global Workspace Capacity (Eq. E2010):} $W_{\max} = N \cdot \dfrac{\lambda_{\max}}{\lambda_{\min}}$
+};
+
+% Arrows connecting
+\draw[arrow] (ignition) -- (consciousness) node[midway, right, font=\scriptsize];
+\draw[arrow] (consciousness) -- (coherence) node[midway, right, font=\scriptsize];
+\draw[arrow] (coherence) -- (capacity) node[midway, right, font=\scriptsize];
+
+% Additional equations
+\node[font=\scriptsize, text centered, text=gray] at (-5, -6) {
+    Theorem 72.33: Ignition Threshold\\
+    Theorem 72.34: Type Transition\\
+    Theorem 72.35: Global Workspace
+};
+\node[font=\scriptsize, text centered, text=gray] at (5, -6) {
+    Theorem 72.36: Integrated Information\\
+    Theorem 72.37: Consciousness Measure\\
+    Theorem 72.38: Eigenvalue Coherence
+};
+
+\end{tikzpicture}
+\end{document}
